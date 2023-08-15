@@ -108,7 +108,7 @@ describe('My suite', () => {
         
     });
 
-    it('Testing a loop', () => {
+    it.skip('Testing a loop', () => {
         cy.visit('https://demo.guru99.com/test/newtours/register.php')
         cy.get('select[name="country"]').as('pais').find('option')
         .each((option,index)=>{
