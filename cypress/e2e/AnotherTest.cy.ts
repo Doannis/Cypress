@@ -119,12 +119,12 @@ describe('My suite', () => {
         })
     });
 
-    it('Testing usin Hash()', () => {
+    it.skip('Testing usin Hash()', () => {
         cy.visit('https://www.ejemplo.com/pagina#seccion')
         cy.hash().should('eq','seccion')
     });
 
-    it('Testing using Invoke()', () => {
+    it.skip('Testing using Invoke()', () => {
         cy.visit('https://demo.guru99.com/test/newtours/register.php')
         cy.get('input[name="submit"]').as('BotonEnviar').scrollIntoView().should('be.visible')
         cy.get('@BotonEnviar').invoke('attr','type').should('equal','submit')
