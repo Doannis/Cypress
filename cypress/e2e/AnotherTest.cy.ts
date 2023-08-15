@@ -119,7 +119,7 @@ describe('My suite', () => {
         })
     });
 
-    it.skip('Testing usin Hash()', () => {
+    it('Testing usin Hash()', () => {
         cy.visit('https://www.ejemplo.com/pagina#seccion')
         cy.hash().should('eq','seccion')
     });
