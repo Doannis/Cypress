@@ -16,12 +16,12 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-   cd $(System.DefaultWorkingDirectory)\_work\1\s
+   cd $(System.DefaultWorkingDirectory)\_work\1\s\Cypress
       npm install
      displayName: 'npm install '
 
 - script: |
-    cd $(System.DefaultWorkingDirectory)\_work\1\s\cypress
+    cd $(System.DefaultWorkingDirectory)\_work\1\s\Cypress\cypress
       npx cypress run --spec cypress\e2e\AnotherTest.cy.ts
      displayName: 'executing cypress '
   continueOnError: true
